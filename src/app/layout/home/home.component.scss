@@ -1,0 +1,17 @@
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #cdd0d4;
+}
+
+hr {
+  border-color: black;
+  border-width: 1rem;
+  max-width: 3rem;
+}
+
+.layout {
+  background: url(../../../assets/img/bg.jpg) no-repeat center center fixed;
+  height: 100vh;
+  background-size: cover;
+}
