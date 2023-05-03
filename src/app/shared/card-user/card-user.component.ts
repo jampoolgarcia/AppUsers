@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { UserI } from 'src/app/interface/user';
 
 @Component({
   selector: 'app-card-user',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class CardUserComponent implements OnInit {
 
   public imgUrl = 'https://phantom-marca.unidadeditorial.es/4c7e775d1e2a58f3c271fb52048e4262/resize/1320/f/jpg/assets/multimedia/imagenes/2022/10/10/16654222870042.jpg';
+  
+  @Input()
+  public user!: UserI;
 
   constructor() { }
 

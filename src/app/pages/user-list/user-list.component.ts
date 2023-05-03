@@ -10,6 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 export class UserListComponent implements OnInit {
 
   public users: UserI[] = [];
+  public loadding = true;
 
   constructor(private _service: UserService) {}
 
@@ -18,8 +19,10 @@ export class UserListComponent implements OnInit {
   }
 
   getUsers(){
+    this.loadding = true;
     this._service.get().subscribe(res =>{
       this.users = res;
+      this.loadding = false;
     })
   }
 
