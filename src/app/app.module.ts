@@ -23,6 +23,7 @@ import { CardUserComponent } from './shared/card-user/card-user.component';
 
 // pages 
 import { UserListComponent } from './pages/user-list/user-list.component';
+import { UserDetailsComponent } from './pages/user-details/user-details.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { UserListComponent } from './pages/user-list/user-list.component';
     FooterComponent,
     ToolbarComponent,
     UserListComponent,
-    CardUserComponent
+    CardUserComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
