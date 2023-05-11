@@ -24,6 +24,7 @@ import { CardUserComponent } from './shared/card-user/card-user.component';
 // pages 
 import { UserListComponent } from './pages/user-list/user-list.component';
 import { UserDetailsComponent } from './pages/user-details/user-details.component';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { UserDetailsComponent } from './pages/user-details/user-details.componen
     ToolbarComponent,
     UserListComponent,
     CardUserComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

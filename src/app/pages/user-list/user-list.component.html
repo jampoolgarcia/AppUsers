@@ -1,8 +1,4 @@
-<div *ngIf="loadding" class="row d-flex justify-content-center">
-  <div class="spinner-grow text-warning bg-spinner" role="status"></div>
-  <div class="spinner-grow mx-2 text-warning bg-spinner" role="status"></div>
-  <div class="spinner-grow text-warning bg-spinner" role="status"></div>
-</div>
+<app-spinner [loadding]="loadding"></app-spinner>
 <div class="row">
   <div *ngFor="let user of users" class="col-lg-3" style="margin: 30px;">
     <app-card-user [user]="user"></app-card-user>
